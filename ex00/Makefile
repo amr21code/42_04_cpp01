@@ -6,11 +6,11 @@
 #    By: anruland <anruland@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/17 17:38:02 by anruland          #+#    #+#              #
-#    Updated: 2022/07/17 18:16:07 by anruland         ###   ########.fr        #
+#    Updated: 2022/07/17 19:39:06 by anruland         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= brainz
+NAME	= BraiiiiiiinnnzzzZ
 CC		= c++
 FLAGS	= -Wall -Wextra -Werror -std=c++98
 INPUT	= main.cpp \
