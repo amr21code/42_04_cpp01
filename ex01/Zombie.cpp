@@ -6,7 +6,7 @@
 /*   By: anruland <anruland@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/17 19:10:47 by anruland          #+#    #+#             */
-/*   Updated: 2022/07/18 10:58:45 by anruland         ###   ########.fr       */
+/*   Updated: 2022/07/18 10:58:48 by anruland         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,9 @@ Zombie::~Zombie(void)
 void	Zombie::announce(void)
 {
 	std::cout << mName << ": BraiiiiiiinnnzzzZ..." << std::endl;
+}
+
+void	Zombie::setName(std::string name)
+{
+	mName = name;
 }
