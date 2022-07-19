@@ -6,7 +6,7 @@
 /*   By: anruland <anruland@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/17 19:10:47 by anruland          #+#    #+#             */
-/*   Updated: 2022/07/18 10:58:45 by anruland         ###   ########.fr       */
+/*   Updated: 2022/07/19 17:36:01 by anruland         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ Zombie::~Zombie(void)
 	std::cout << "Zombie " << mName << " died" << std::endl;
 }
 
-void	Zombie::announce(void)
+void	Zombie::announce(void) const
 {
 	std::cout << mName << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }

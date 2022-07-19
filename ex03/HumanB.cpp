@@ -1,30 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anruland <anruland@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/17 18:16:36 by anruland          #+#    #+#             */
-/*   Updated: 2022/07/19 17:35:52 by anruland         ###   ########.fr       */
+/*   Created: 2022/07/19 19:03:51 by anruland          #+#    #+#             */
+/*   Updated: 2022/07/19 19:29:23 by anruland         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_HPP
-#define ZOMBIE_HPP
-#include <string>
-#include <iostream>
+#include "HumanB.hpp"
+#include "Weapon.hpp"
 
-class Zombie 
+HumanB::HumanB(std::string name)
 {
-	public:
-				Zombie(void);
-				Zombie(std::string name);
-				~Zombie(void);
-		void	announce(void) const;
+	this->mName = name;
+	this->setWeapon();
+}
 
-	private:
-		std::string	mName;
-};
+HumanB::~HumanB(void)
+{
+}
 
-#endif
+void	HumanB::setWeapon(std::string type)
+{
+	this->mWeapon = type;
+}
+
+void	HumanB::attack(void) const
+{
+	std::cout << this->mName << " attacks with their " << this->mWeapon << std::endl;
+}

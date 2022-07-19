@@ -1,30 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   HumanA.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anruland <anruland@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/17 18:16:36 by anruland          #+#    #+#             */
-/*   Updated: 2022/07/19 17:35:52 by anruland         ###   ########.fr       */
+/*   Created: 2022/07/19 19:03:25 by anruland          #+#    #+#             */
+/*   Updated: 2022/07/19 19:20:37 by anruland         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_HPP
-#define ZOMBIE_HPP
-#include <string>
-#include <iostream>
+#include "HumanA.hpp"
+#include "Weapon.hpp"
 
-class Zombie 
+HumanA::HumanA(std::string name, Weapon type)
 {
-	public:
-				Zombie(void);
-				Zombie(std::string name);
-				~Zombie(void);
-		void	announce(void) const;
+	this->mName = name;
+	this->setWeapon(type.getType());
+}
 
-	private:
-		std::string	mName;
-};
+HumanA::~HumanA(void)
+{
+}
 
-#endif
+void	HumanA::setWeapon(std::string type)
+{
+	this->mWeapon = type;
+}
+
+void	HumanA::attack(void) const
+{
+	std::cout << this->mName << " attacks with their " << this->mWeapon << std::endl;
+}
