@@ -6,7 +6,7 @@
 /*   By: anruland <anruland@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/19 19:03:51 by anruland          #+#    #+#             */
-/*   Updated: 2022/07/19 19:29:23 by anruland         ###   ########.fr       */
+/*   Updated: 2022/07/20 19:42:17 by anruland         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,12 @@
 HumanB::HumanB(std::string name)
 {
 	this->mName = name;
-	this->setWeapon();
+	this->setWeapon(NULL);
 }
 
-HumanB::~HumanB(void)
+void	HumanB::setWeapon(Weapon type)
 {
-}
-
-void	HumanB::setWeapon(std::string type)
-{
-	this->mWeapon = type;
+	this->mWeapon = &(type.getType());
 }
 
 void	HumanB::attack(void) const

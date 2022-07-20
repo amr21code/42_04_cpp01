@@ -6,7 +6,7 @@
 /*   By: anruland <anruland@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/19 17:34:23 by anruland          #+#    #+#             */
-/*   Updated: 2022/07/19 19:16:07 by anruland         ###   ########.fr       */
+/*   Updated: 2022/07/20 19:43:47 by anruland         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Weapon::~Weapon(void)
 {
 }
 
-const std::string &Weapon::getType(void) const
+std::string &Weapon::getType(void) const
 {
 	const std::string &rType = this->mType;
 
