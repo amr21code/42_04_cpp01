@@ -6,7 +6,7 @@
 /*   By: anruland <anruland@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/19 19:02:51 by anruland          #+#    #+#             */
-/*   Updated: 2022/07/20 19:41:04 by anruland         ###   ########.fr       */
+/*   Updated: 2022/07/21 09:17:02 by anruland         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ class HumanB
 	public:
 		HumanB(std::string name);
 		void	attack(void) const;
-		void	setWeapon(Weapon type);
+		void	setWeapon(Weapon &type);
 
 	private:
 		std::string	mName;
-		std::string *mWeapon;
+		Weapon		*mWeapon;
 };
 
 

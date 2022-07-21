@@ -6,26 +6,23 @@
 /*   By: anruland <anruland@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/19 17:34:23 by anruland          #+#    #+#             */
-/*   Updated: 2022/07/20 19:43:47 by anruland         ###   ########.fr       */
+/*   Updated: 2022/07/21 09:10:33 by anruland         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
 
-Weapon::Weapon(std::string type)
+Weapon::Weapon(std::string type) : mType(type)
 {
-	this->setType(type);
 }
 
 Weapon::~Weapon(void)
 {
 }
 
-std::string &Weapon::getType(void) const
+std::string const &Weapon::getType(void) const
 {
-	const std::string &rType = this->mType;
-
-	return rType;
+	return this->mType;
 }
 
 void Weapon::setType(std::string type)
