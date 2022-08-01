@@ -6,7 +6,7 @@
 /*   By: anruland <anruland@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 16:36:40 by anruland          #+#    #+#             */
-/*   Updated: 2022/08/01 16:01:39 by anruland         ###   ########.fr       */
+/*   Updated: 2022/08/01 17:04:14 by anruland         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,10 @@ void	Harl::Complain(std::string level) const
 
 		case 3:
 			(this->*pComplainFct[3])();
+			break;
+		
+		default:
+			std::cout << "not a matching complaint" << std::endl;
 	}
 }
 
