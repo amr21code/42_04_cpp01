@@ -6,14 +6,15 @@
 #    By: anruland <anruland@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/21 09:52:52 by anruland          #+#    #+#              #
-#    Updated: 2022/07/21 13:52:01 by anruland         ###   ########.fr        #
+#    Updated: 2022/08/01 14:46:15 by anruland         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= sed_loser
+NAME	= harl
 CC		= c++
-FLAGS	= -Wall -Wextra -Werror -std=c++98 -g3
-INPUT	= main.cpp \
+FLAGS	= -Wall -Wextra -Werror -std=c++98
+INPUT	= 	main.cpp \
+			Harl.cpp
 
 all: $(NAME)
 
